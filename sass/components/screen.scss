@@ -1,0 +1,17 @@
+.screen {
+  &__frame {
+    padding: 3rem 5rem;
+    border-radius: 10px;
+    background: #dde5c3;
+    box-shadow: inset 7px 7px 8px #b7bea2, inset -7px -7px 8px #ffffe4;
+    background-color: greenyellow;
+  }
+
+  &__text {
+    //text-transform: uppercase;
+    font-size: 4rem;
+    color: #fff;
+    font-family: $font-mono;
+    letter-spacing: 0.2rem;
+  }
+}

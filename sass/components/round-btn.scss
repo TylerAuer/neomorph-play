@@ -1,0 +1,24 @@
+.round-btn {
+  position: relative;
+  display: inline-block;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background: #1c1c27;
+  box-shadow: 5px 5px 10px #0e0e13, -5px -5px 10px #2a2a3b;
+  transition: all 0.2s;
+
+  &__label {
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 218);
+  }
+
+  &:hover {
+    border-radius: 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  /* Forces inheritance up the DOM tree*/
+  box-sizing: inherit;
+}
+
+html {
+  // Defines 1rem = 10px assuming standard 16px browser font size
+  // This makes using rem units way easier
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-sans;
+  font-size: 1.6rem;
+}
