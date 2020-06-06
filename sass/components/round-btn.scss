@@ -1,24 +1,46 @@
 .round-btn {
   position: relative;
   display: inline-block;
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
   border-radius: 50%;
   background: #1c1c27;
   box-shadow: 5px 5px 10px #0e0e13, -5px -5px 10px #2a2a3b;
   transition: all 0.2s;
+  margin: 2rem;
 
   &__label {
+    font-family: $font-mono;
     position: absolute;
-    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(255, 255, 218);
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: rgb(173, 173, 170);
   }
 
   &:hover {
-    border-radius: 0;
     cursor: pointer;
+  }
+
+  &:hover &__label {
+    color: rgb(250, 3, 238);
+    text-shadow: 0 0 1rem rgba(250, 3, 238, 0.548),
+      0 0 2rem rgba(250, 3, 238, 0.397);
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: inset 5px 5px 10px #0e0e13, inset -5px -5px 10px #2a2a3b;
+  }
+
+  &:active &__label,
+  &:focus &__label {
+    transform: scale(0.95) translate(-50%, -50%);
   }
 }
